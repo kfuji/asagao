@@ -21,3 +21,7 @@ namespace :deploy do
     run "touch #{shared_path}/tmp/restart.txt"
   end
 end
+
+after "deploy:update", roles: :app do
+  run "/bin/cp #{shared_path}/config/database.yml #{release_path}/config/"
+end
