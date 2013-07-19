@@ -40,7 +40,7 @@ div#container {
 
 /* 左の枠（コンテンツを入れる） */
 div#content {
-  float: left;
+  float:;
   width: 530px;
   padding: 10px 10px 10px 0;
 }
